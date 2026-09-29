@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0e0f12;
+  --color-bg-elevated: #14151a;
+  --color-surface: #1a1c22;
+  --color-surface-2: #22242c;
+  --color-fg: #ece8df;
+  --color-muted: #9a958a;
+  --color-primary: #c4b8a1;
+  --color-primary-foreground: #14120e;
+  --color-border: #2a2c34;
+  --color-ring: #c4b8a1;
+  --color-danger: #c45c4a;
+  --color-ok: #8aa67f;
+  --color-brand: #0a5c82;
+  --color-desk: #0b0c0f;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-serif: "Source Serif 4", "Times New Roman", serif;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+  }
+}
+
+.np-body p {
+  margin: 0 0 0.72em;
+}
+
+.np-body h2,
+.np-body h3 {
+  font-size: var(--np-subhead, 0.92em);
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0.85em 0 0.4em;
+  line-height: 1.2;
+  break-inside: avoid;
+}
+
+.np-body h3 {
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.np-body blockquote {
+  margin: 0.6em 0 0.8em;
+  padding-left: 0.8em;
+  border-left: 0.7px solid currentColor;
+  font-style: italic;
+}
+
+.np-body ul,
+.np-body ol {
+  margin: 0 0 0.7em;
+  padding-left: 1.1em;
+}
+
+.np-body a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.np-page {
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

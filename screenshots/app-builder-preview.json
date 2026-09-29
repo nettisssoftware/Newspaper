@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Editorial Newspaper Renderer",
+      "hasCanvas": false,
+      "bodyTextLen": 942,
+      "bodyTextHash": "356c0b70afbe4af902ad746cc286076f7e731017a9e4399e06ca725357f52f2d",
+      "bodyTextPrefix": "Editorial Newspaper Renderer Imagen superior A4 MuestraRegenerar",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Editorial Newspaper Renderer",
+      "hasCanvas": false,
+      "bodyTextLen": 904,
+      "bodyTextHash": "7b000713b4dca2c6d61156976312822e9e498a501d316bfb6411636f9b484346",
+      "bodyTextPrefix": "Editorial Contenido Diseño Tipo Exportar Edición Etiqueta edició",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
