@@ -15,7 +15,7 @@ import { DesignPanel } from "./DesignPanel";
 import { ExportPanel } from "./ExportPanel";
 import { PreviewStage } from "./PreviewStage";
 import { TypePanel } from "./TypePanel";
-import { Group, Panel, Separator as ResizeHandle } from "react-resizable-panels";import {
+import {
   AlignLeft,
   Download,
   FileType,
@@ -177,7 +177,7 @@ export function EditorApp() {
       </header>
 
       <div className="flex min-h-0 min-w-0 flex-1 flex-col md:flex-row">
-        <aside className="order-2 flex max-h-[52%] min-h-0 min-w-0 flex-col border-t border-border bg-bg-elevated md:order-1 md:max-h-none md:w-[min(24rem,38%)] md:border-r md:border-t-0">
+        <aside className="order-2 flex h-[46%] min-h-0 min-w-0 shrink-0 flex-col overflow-hidden border-t border-border bg-bg-elevated md:order-1 md:h-auto md:w-[min(24rem,38%)] md:shrink md:border-r md:border-t-0">
           <EditorTabs
             tab={tab}
             setTab={setTab}
@@ -197,6 +197,7 @@ export function EditorApp() {
           />
         </div>
       </div>
+      
       <div ref={pagedHost} className="pointer-events-none fixed -left-[200vw] top-0 opacity-0" />
     </div>
   );
@@ -225,13 +226,7 @@ function PreviewPane({
         </span>
       </div>
       <div className="min-h-0 flex-1">
-        {fontsReady ? (
-          <PreviewStage doc={previewDoc} stageRef={stageRef} />
-        ) : (
-          <div className="flex h-full items-center justify-center text-sm text-muted">
-            Componiendo con las familias seleccionadas…
-          </div>
-        )}
+        <PreviewStage doc={previewDoc} stageRef={stageRef} />
       </div>
     </div>
   );

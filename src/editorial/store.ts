@@ -134,7 +134,7 @@ export const useEditor = create<EditorState>()(
       composition: () => compose(get().doc),
     }),
     {
-      name: "editorial-newspaper-renderer",
+      name: "editorial-newspaper-renderer-v2",
       storage: createJSONStorage(() => {
         if (typeof window === "undefined") {
           return {

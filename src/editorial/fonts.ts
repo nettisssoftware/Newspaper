@@ -108,9 +108,9 @@ export async function ensureFonts(families: string[]): Promise<boolean> {
             document.fonts.load(`400 16px "${family}"`),
             document.fonts.load(`700 24px "${family}"`),
             document.fonts.load(`400 12px "${family}"`),
-          ]),
+          ]).then(() => undefined),
           1800,
-          [],
+          undefined,
         );
         loaded.add(family);
       }),
