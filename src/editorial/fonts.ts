@@ -34,6 +34,8 @@ export const FONT_CATALOG: FontOption[] = [
   { id: "public-sans", family: "Public Sans", google: "Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400", role: "body", weights: [400, 500, 600, 700], sample: "Public Sans" },
   { id: "karla", family: "Karla", google: "Karla:ital,wght@0,400;0,500;0,600;0,700;1,400", role: "body", weights: [400, 500, 600, 700], sample: "Karla" },
   { id: "news-cycle", family: "News Cycle", google: "News+Cycle:wght@400;700", role: "display", weights: [400, 700], sample: "News Cycle" },
+  { id: "anton", family: "Anton", google: "Anton", role: "display", weights: [400], sample: "Titular" },
+  { id: "antonio", family: "Antonio", google: "Antonio:wght@100;200;300;400;500;600;700", role: "both", weights: [100, 200, 300, 400, 500, 600, 700], sample: "Editorial" },
 ];
 
 const loaded = new Set<string>();
